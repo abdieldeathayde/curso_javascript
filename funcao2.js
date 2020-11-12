@@ -25,3 +25,4 @@ const subtracao = (a, b) => a - b
 
 // const soma3 = (a, b) =>  a + b 
 
+console.log(subtracao(2, 3))

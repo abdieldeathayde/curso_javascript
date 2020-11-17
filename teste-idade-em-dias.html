@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // passar para javascript
+    let ano = 0;
+    let meses = 0;
+    let mes;
+    let dias = 0;
+    let dia;
+    {    
+      function funcao(e) {
+
+        let dias = document.getElementById('Dias').value
+
+
+        while (dias >= 365) {
+          ano++;
+
+        }
+
+        meses = dias - ano;
+        if (meses == 12) {
+          mes++;
+        }
+
+
+        dias = meses - mes;
+        if (dias <= 30) {
+          dia++;
+        }
+
+        console.log(" " + ano + "ano(s)");
+        console.log("\n " + mes + "mes(es)");
+        console.log("\n " + dia + "dia(s)")
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <input id="dias" type="dias" value="LocalHost"/>
+  </form>
+</body>
+</html>
+
+
+
